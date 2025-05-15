@@ -39,3 +39,6 @@ def predict(data: PatientData):
         'prediction': int(prediction),
         'probability': float(prediction_prob)
     }
+@app.get("/")
+def read_root():
+    return {"message": "Diabetes Prediction API is up and running!"}
