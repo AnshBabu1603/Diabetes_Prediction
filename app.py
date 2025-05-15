@@ -6,8 +6,8 @@ import numpy as np
 app = FastAPI()
 
 
-model = joblib.load(r'C:\Users\coola\OneDrive\Desktop\coding\Diabetes Prediction ML Model\logistic_regression_model.pkl')
-scaler = joblib.load(r'C:\Users\coola\OneDrive\Desktop\coding\Diabetes Prediction ML Model\scaler.pkl')
+model = joblib.load('logistic_regression_model.pkl')
+scaler = joblib.load('scaler.pkl')
 
 
 class PatientData(BaseModel):
