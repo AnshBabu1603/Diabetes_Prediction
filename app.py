@@ -20,8 +20,8 @@ app.add_middleware(
     allow_headers=["*"],    # allow all headers
 )
 
-model = joblib.load(r'C:\Users\coola\OneDrive\Desktop\coding\Diabetes Prediction ML Model\logistic_regression_model.pkl')
-scaler = joblib.load(r'C:\Users\coola\OneDrive\Desktop\coding\Diabetes Prediction ML Model\scaler.pkl')
+model = joblib.load('logistic_regression_model.pkl')
+scaler = joblib.load('scaler.pkl')
 
 class PatientData(BaseModel):
     Pregnancies: float
